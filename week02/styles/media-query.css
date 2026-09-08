@@ -16,7 +16,11 @@ footer {
   border: 1px solid #cce0ff;
   border-radius: 6px;
 }
-
+@media screen and (min-width: 500px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -29,7 +33,9 @@ h1, h2 {
 }
 
 section {
-  margin-bottom: 1.5rem;
+  background-color: #ffffff; 
+  padding: 1rem;
+  border-radius: 4px;
 }
 
 section:last-child {

@@ -73,6 +73,24 @@ footer {
             "data weather";
     }
 
+/* Default mobile view */
+.weather-card h2::after {
+    content: none;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    /* Hide the inline mobile icon so it doesn't duplicate */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /* Show the pseudo-element icon on desktop */
+    .weather-card h2::after {
+        content: " ⛅";
+    }
+}
+
     .hero {
         grid-area: hero;
     }

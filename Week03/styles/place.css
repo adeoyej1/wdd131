@@ -1,13 +1,14 @@
+
 :root {
-    --primary-color: #008751; /* Nigeria Green */
+    --primary-color: #008751;
     --secondary-color: #ffffff;
     --dark-color: #222222;
     --light-bg: #f4f9f6;
     --border-color: #dddddd;
-    --font-stack: 'Roboto', sans-serif;
+    --font-stack: "Roboto", sans-serif;
 }
 
-/* Base Styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,12 +22,13 @@ body {
     color: var(--dark-color);
 }
 
+
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #ffffff;
 }
 
 header h1 {
@@ -34,15 +36,16 @@ header h1 {
     letter-spacing: 1px;
 }
 
+
 main {
     max-width: 1200px;
     margin: 1.5rem auto;
     padding: 0 1rem;
+
     display: grid;
     gap: 1.5rem;
 }
 
-/* Hero Section */
 .hero {
     width: 100%;
     overflow: hidden;
@@ -50,17 +53,19 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.hero picture {
+    display: block;
+}
+
 .hero img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    max-height: 450px;
 }
 
-/* Cards Layout */
 .card {
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -68,40 +73,68 @@ main {
 
 .card h2 {
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 0.5rem;
+
+    border-bottom: 2px solid var(--primary-color);
+
     color: var(--primary-color);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.data-card ul, .weather-details {
+/* ------------------------------
+   Data and Weather Lists
+--------------------------------*/
+
+.data-card ul,
+.weather-details {
     list-style: none;
 }
 
-.data-card li, .weather-details li {
+.data-card li,
+.weather-details li {
     padding: 0.5rem 0;
+
     border-bottom: 1px solid var(--border-color);
+
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
-.data-card li:last-child, .weather-details li:last-child {
+.data-card li:last-child,
+.weather-details li:last-child {
     border-bottom: none;
+}
+
+.data-card li strong,
+.weather-details li strong {
+    font-weight: 700;
+}
+
+.data-card li span,
+.weather-details li span {
+    text-align: right;
+}
+
+.mobile-icon {
+    display: inline-flex;
+    align-items: center;
 }
 
 .mobile-icon svg {
     fill: var(--primary-color);
-    vertical-align: middle;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
+
     background-color: var(--dark-color);
     color: var(--secondary-color);
+
     margin-top: 2rem;
     font-size: 0.95rem;
 }
@@ -114,24 +147,47 @@ footer p {
     color: #a3e4d7;
 }
 
-/* Media Queries for Desktop Layout */
+
 @media (min-width: 768px) {
+
     main {
         grid-template-columns: 2fr 1fr;
+        align-items: start;
     }
-    
+
     .hero {
         grid-column: 1 / -1;
     }
 
-    /* Requirement: Pseudo-element for the weather icon in the large view after heading "Weather" */
+
     .weather-card h2::after {
         content: " ⛅";
         font-size: 1.4rem;
     }
 
-    /* Hide mobile SVG icon on wide screens */
+    
     .mobile-icon {
         display: none;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero img {
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .card {
+        padding: 2rem;
     }
 }

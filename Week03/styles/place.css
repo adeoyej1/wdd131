@@ -30,6 +30,10 @@ main {
     gap: 1rem;
 }
 
+.hero {
+    grid-area: hero;
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -41,7 +45,7 @@ main {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
@@ -50,10 +54,22 @@ main {
     color: var(--primary-color);
 }
 
+.data-card {
+    grid-area: data;
+}
+
+.weather-card {
+    grid-area: weather;
+}
+
 .mobile-weather-icon {
     width: 24px;
     height: 24px;
     vertical-align: middle;
+}
+
+.weather-card h2::after {
+    content: none;
 }
 
 footer {
@@ -64,50 +80,20 @@ footer {
     margin-top: 2rem;
 }
 
-/* Media query for wider views (desktop layout) */
+/* Desktop layout */
 @media (min-width: 768px) {
     main {
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "hero hero"
             "data weather";
     }
 
-/* Default mobile view */
-.weather-card h2::after {
-    content: none;
-}
-
-/* Media Query for Larger Screens */
-@media (min-width: 768px) {
-    /* Hide the inline mobile icon so it doesn't duplicate */
-    .weather-icon-mobile {
+    .mobile-weather-icon {
         display: none;
     }
 
-    /* Show the pseudo-element icon on desktop */
     .weather-card h2::after {
         content: " ⛅";
-    }
-}
-
-    .hero {
-        grid-area: hero;
-    }
-
-    .data-card {
-        grid-area: data;
-    }
-
-    .weather-card {
-        grid-area: weather;
-    }
-
-    .mobile-weather-icon {
-        display: none; /* Hide SVG icon on large view */
-    }
-
-    .weather-card h2::after {
-        content: " ⛅"; /* Pseudo-element emoticon for wider view */
     }
 }

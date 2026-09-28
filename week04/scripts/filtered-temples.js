@@ -68,7 +68,7 @@ const temples = [
     dedicated: "2004, January, 11",
     area: 17500,
     imageUrl:
-        "https://www.churchofjesuschrist.org/media/image/accra-ghana-temple-lds-ea81753?lang=eng"
+        "https://www.https://churchofjesuschristtemples.org/accra-ghana-temple/churchofjesuschrist.org/media/image/accra-ghana-temple-lds-ea81753?lang=eng"
 },
 
 {

@@ -53,7 +53,8 @@ margin: 0;
 }
 
 main {
-width: min(94%, 1000px);
+width: 94%;
+max-width: 1000px;
 margin: 2rem auto;
 }
 
@@ -197,7 +198,7 @@ border-top: 5px solid var(--accent-color);
 
 @media screen and (min-width: 768px) {
 header {
-padding: 2rem max(3%, calc((100% - 1000px) / 2));
+padding: 2rem 3%;
 }
 
 ```
@@ -208,5 +209,6 @@ header h1 {
 .color-grid {
     grid-template-columns: repeat(3, 1fr);
 }
+```
 
-
+}

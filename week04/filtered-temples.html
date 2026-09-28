@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album - Filtered Temples</title>
+
+    <meta
+        name="description"
+        content="Explore temples around the world by filtering them by dedication date and size."
+    >
+
+    <meta name="author" content="John Adeoye">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Temple Album</h1>
+
+        <button
+            id="menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <button type="button" id="home">Home</button>
+            <button type="button" id="old">Old</button>
+            <button type="button" id="new">New</button>
+            <button type="button" id="large">Large</button>
+            <button type="button" id="small">Small</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Album</h2>
+
+        <section
+            id="temple-container"
+            class="temple-grid"
+            aria-live="polite"
+        ></section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> John Adeoye | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

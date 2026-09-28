@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+
+/* -----------------------------
+   Root Variables
+----------------------------- */
+
+:root {
+    --primary-color: #174a5b;
+    --secondary-color: #0f3440;
+    --accent-color: #f2b134;
+    --background-color: #f4f7f8;
+    --card-color: #ffffff;
+    --text-color: #222222;
+    --light-text: #ffffff;
+    --border-color: #d7e0e3;
+}
+
+
+/* -----------------------------
+   Global Styles
+----------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+
+/* -----------------------------
+   Header
+----------------------------- */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* -----------------------------
+   Menu Button
+----------------------------- */
+
+#menu {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 0.75rem;
+
+    border: 2px solid var(--light-text);
+    border-radius: 5px;
+
+    background-color: transparent;
+    color: var(--light-text);
+
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+#menu:hover,
+#menu:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+
+/* -----------------------------
+   Navigation
+----------------------------- */
+
+nav {
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-top: 1rem;
+}
+
+
+nav.open {
+    display: flex;
+}
+
+
+nav button {
+    width: 100%;
+    max-width: 180px;
+
+    padding: 0.7rem 1rem;
+
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+nav button:hover,
+nav button:focus {
+    background-color: var(--accent-color);
+    color: #111111;
+    border-color: var(--light-text);
+}
+
+
+/* -----------------------------
+   Main
+----------------------------- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+}
+
+
+main h2 {
+    margin-bottom: 1.5rem;
+
+    color: var(--secondary-color);
+
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+/* -----------------------------
+   Temple Grid
+----------------------------- */
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+/* -----------------------------
+   Temple Card
+----------------------------- */
+
+.temple-card {
+    margin: 0;
+
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.temple-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+
+/* -----------------------------
+   Temple Images
+----------------------------- */
+
+.temple-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 400 / 250;
+
+    object-fit: cover;
+}
+
+
+/* -----------------------------
+   Temple Information
+----------------------------- */
+
+.temple-card figcaption {
+    padding: 1.25rem;
+}
+
+
+.temple-card h3 {
+    margin-bottom: 0.75rem;
+
+    color: var(--primary-color);
+
+    font-size: 1.3rem;
+}
+
+
+.temple-card p {
+    margin-bottom: 0.5rem;
+
+    color: var(--text-color);
+}
+
+
+.temple-card strong {
+    color: var(--secondary-color);
+}
+
+
+/* -----------------------------
+   Footer
+----------------------------- */
+
+footer {
+    padding: 1.5rem 1rem;
+
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+
+    text-align: center;
+}
+
+
+footer p {
+    margin: 0.25rem;
+}
+
+
+/* -----------------------------
+   Tablet
+----------------------------- */
+
+@media screen and (min-width: 32rem) {
+
+    header {
+        padding: 1.25rem;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+
+        margin-top: 0;
+
+        gap: 0.75rem;
+    }
+
+
+    nav button {
+        width: auto;
+        min-width: 90px;
+    }
+
+
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* -----------------------------
+   Desktop
+----------------------------- */
+
+@media screen and (min-width: 64rem) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+
+    main {
+        padding: 2rem 1rem 3rem;
+    }
+
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .temple-card figcaption {
+        min-height: 190px;
+    }
+}

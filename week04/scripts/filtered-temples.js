@@ -77,7 +77,7 @@ const temples = [
         dedicated: "1985, August, 24",
         area: 19184,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple.jpg"
+            "https://www.churchofjesuschrist.org/media/image/johannesburg-south-africa-temple-lds-e44b3c8?lang=eng"
     },
 
     {
@@ -102,9 +102,6 @@ const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector("#navigation");
 
 
-/* -----------------------------
-   Display Temple Cards
------------------------------ */
 
 function displayTemples(templeList) {
 
@@ -149,10 +146,6 @@ function displayTemples(templeList) {
 }
 
 
-/* -----------------------------
-   Format Dedication Date
------------------------------ */
-
 function formatDate(dateString) {
 
     const parts = dateString.split(", ");
@@ -165,20 +158,10 @@ function formatDate(dateString) {
 }
 
 
-/* -----------------------------
-   Home Filter
-   Displays all temples
------------------------------ */
-
 function showHome() {
     displayTemples(temples);
 }
 
-
-/* -----------------------------
-   Old Filter
-   Before 1900
------------------------------ */
 
 function showOld() {
 
@@ -193,11 +176,6 @@ function showOld() {
 }
 
 
-/* -----------------------------
-   New Filter
-   After 2000
------------------------------ */
-
 function showNew() {
 
     const newTemples = temples.filter((temple) => {
@@ -211,11 +189,6 @@ function showNew() {
 }
 
 
-/* -----------------------------
-   Large Filter
-   Greater than 90,000 sq ft
------------------------------ */
-
 function showLarge() {
 
     const largeTemples = temples.filter((temple) => {
@@ -226,11 +199,6 @@ function showLarge() {
     displayTemples(largeTemples);
 }
 
-
-/* -----------------------------
-   Small Filter
-   Less than 10,000 sq ft
------------------------------ */
 
 function showSmall() {
 
@@ -243,10 +211,6 @@ function showSmall() {
 }
 
 
-/* -----------------------------
-   Filter Button Events
------------------------------ */
-
 homeButton.addEventListener("click", showHome);
 
 oldButton.addEventListener("click", showOld);
@@ -257,10 +221,6 @@ largeButton.addEventListener("click", showLarge);
 
 smallButton.addEventListener("click", showSmall);
 
-
-/* -----------------------------
-   Mobile Navigation
------------------------------ */
 
 menuButton.addEventListener("click", () => {
 
@@ -275,24 +235,13 @@ menuButton.addEventListener("click", () => {
 });
 
 
-/* -----------------------------
-   Footer Year
------------------------------ */
-
 document.querySelector("#currentyear").textContent =
     new Date().getFullYear();
 
-
-/* -----------------------------
-   Last Modified
------------------------------ */
 
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
 
 
-/* -----------------------------
-   Initial Page Load
------------------------------ */
 
 displayTemples(temples);

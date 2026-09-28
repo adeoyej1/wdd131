@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 
-/* -----------------------------
-   Root Variables
------------------------------ */
 
 :root {
     --primary-color: #174a5b;
@@ -16,10 +13,6 @@
     --border-color: #d7e0e3;
 }
 
-
-/* -----------------------------
-   Global Styles
------------------------------ */
 
 * {
     box-sizing: border-box;
@@ -36,10 +29,6 @@ body {
 }
 
 
-/* -----------------------------
-   Header
------------------------------ */
-
 header {
     background-color: var(--primary-color);
     color: var(--light-text);
@@ -53,10 +42,6 @@ header h1 {
     margin-bottom: 1rem;
 }
 
-
-/* -----------------------------
-   Menu Button
------------------------------ */
 
 #menu {
     display: block;
@@ -79,11 +64,6 @@ header h1 {
     background-color: var(--accent-color);
     color: var(--secondary-color);
 }
-
-
-/* -----------------------------
-   Navigation
------------------------------ */
 
 nav {
     display: none;
@@ -129,10 +109,6 @@ nav button:focus {
 }
 
 
-/* -----------------------------
-   Main
------------------------------ */
-
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -150,20 +126,12 @@ main h2 {
 }
 
 
-/* -----------------------------
-   Temple Grid
------------------------------ */
-
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-
-/* -----------------------------
-   Temple Card
------------------------------ */
 
 .temple-card {
     margin: 0;
@@ -189,11 +157,6 @@ main h2 {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
 }
 
-
-/* -----------------------------
-   Temple Images
------------------------------ */
-
 .temple-card img {
     display: block;
 
@@ -204,11 +167,6 @@ main h2 {
 
     object-fit: cover;
 }
-
-
-/* -----------------------------
-   Temple Information
------------------------------ */
 
 .temple-card figcaption {
     padding: 1.25rem;
@@ -236,9 +194,6 @@ main h2 {
 }
 
 
-/* -----------------------------
-   Footer
------------------------------ */
 
 footer {
     padding: 1.5rem 1rem;
@@ -253,11 +208,6 @@ footer {
 footer p {
     margin: 0.25rem;
 }
-
-
-/* -----------------------------
-   Tablet
------------------------------ */
 
 @media screen and (min-width: 32rem) {
 
@@ -294,10 +244,6 @@ footer p {
     }
 }
 
-
-/* -----------------------------
-   Desktop
------------------------------ */
 
 @media screen and (min-width: 64rem) {
 

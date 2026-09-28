@@ -63,31 +63,31 @@ const temples = [
     },
 
     {
-        templeName: "Accra Ghana",
-        location: "Accra, Ghana",
-        dedicated: "2004, January, 11",
-        area: 17500,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple.jpg"
-    },
+    templeName: "Accra Ghana",
+    location: "Accra, Ghana",
+    dedicated: "2004, January, 11",
+    area: 17500,
+    imageUrl:
+        "https://www.churchofjesuschrist.org/media/image/accra-ghana-temple-lds-ea81753?lang=eng"
+},
 
-    {
-        templeName: "Johannesburg South Africa",
-        location: "Johannesburg, South Africa",
-        dedicated: "1985, August, 24",
-        area: 19184,
-        imageUrl:
-            "https://www.churchofjesuschrist.org/media/image/johannesburg-south-africa-temple-lds-e44b3c8?lang=eng"
-    },
+{
+    templeName: "Johannesburg South Africa",
+    location: "Johannesburg, South Africa",
+    dedicated: "1985, August, 24",
+    area: 19184,
+    imageUrl:
+        "https://www.churchofjesuschrist.org/media/image/johannesburg-south-africa-temple-lds-e44b3c8?lang=eng"
+},
 
-    {
-        templeName: "Seoul Korea",
-        location: "Seoul, South Korea",
-        dedicated: "1985, December, 14",
-        area: 28057,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/seoul-korea-temple.jpg"
-    }
+{
+    templeName: "Seoul Korea",
+    location: "Seoul, South Korea",
+    dedicated: "1985, December, 14",
+    area: 28057,
+    imageUrl:
+        "https://www.churchofjesuschrist.org/media/image/seoul-korea-temple-lds-b0c6efb?lang=eng"
+}
 ];
 
 const templeContainer = document.querySelector("#temple-container");

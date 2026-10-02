@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #123b5d;
+  --primary-dark: #082b46;
+  --accent: #f4b400;
+  --background: #f3f6f8;
+  --surface: #ffffff;
+  --text: #1f2933;
+  --muted: #52606d;
+  --border: #9aa6b2;
+  --success: #176b3a;
+  --focus: #005fcc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--background);
+}
+
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  background: var(--primary);
+}
+
+header h1 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: min(92%, 760px);
+  margin: 2rem auto;
+}
+
+form,
+.confirmation-card {
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid #d5dce2;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+  margin: 0 0 1.25rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+label,
+.field-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+input[type="date"],
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgba(0, 95, 204, 0.25);
+  border-color: var(--focus);
+}
+
+.required {
+  color: #a40000;
+  font-weight: 700;
+}
+
+.optional {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.rating-fieldset {
+  margin: 0;
+  padding: 0.5rem 0 0;
+  border: 0;
+}
+
+.rating-options {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.rating-options div {
+  display: flex;
+  align-items: center;
+}
+
+.rating-options input {
+  position: absolute;
+  opacity: 0;
+}
+
+.rating-options label {
+  margin: 0;
+  padding: 0.2rem;
+  color: #5f6c76;
+  font-size: 2.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.rating-options label:hover,
+.rating-options input:focus + label,
+.rating-options input:checked + label {
+  color: #9a6a00;
+}
+
+.checkbox-group {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.checkbox-group input {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.submit-button,
+.back-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit-button {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background: var(--primary-dark);
+}
+
+.confirmation-card {
+  text-align: center;
+}
+
+.success-icon {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  place-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background: var(--success);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.confirmation-card h2 {
+  margin-top: 0;
+  color: var(--primary-dark);
+}
+
+.review-summary {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  text-align: left;
+  background: #eef3f6;
+  border-left: 4px solid var(--primary);
+  border-radius: 4px;
+}
+
+.review-summary p {
+  margin: 0.4rem 0;
+}
+
+.review-count {
+  margin: 1.5rem 0;
+}
+
+.back-link {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+.back-link:hover,
+.back-link:focus {
+  background: var(--primary-dark);
+}
+
+footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  background: var(--primary);
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+@media (min-width: 600px) {
+  main {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  form,
+  .confirmation-card {
+    padding: 2rem;
+  }
+
+  .checkbox-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .submit-button,
+  .back-link {
+    width: auto;
+    min-width: 180px;
+  }
+
+  .submit-button {
+    display: block;
+    margin-left: auto;
+  }
+}

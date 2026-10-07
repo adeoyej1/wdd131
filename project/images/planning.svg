@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Planning illustration</title>
+<desc id="desc">A checklist and upward growth chart representing business planning.</desc>
+<rect width="640" height="360" rx="28" fill="#eff8fa"/>
+<rect x="70" y="52" width="260" height="250" rx="18" fill="#fff" stroke="#155e75" stroke-width="8"/>
+<path d="M115 112h155M115 170h155M115 228h155" stroke="#b7cdd2" stroke-width="12" stroke-linecap="round"/>
+<path d="M92 105l10 10 20-25M92 163l10 10 20-25M92 221l10 10 20-25" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 270V105h175" stroke="#155e75" stroke-width="9" stroke-linecap="round"/>
+<path d="M415 235l55-62 38 28 65-92" fill="none" stroke="#f59e0b" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M535 109h38v38" fill="none" stroke="#155e75" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Business growth illustration</title>
+<desc id="desc">A simple staircase and flag representing progress toward a business goal.</desc>
+<rect width="640" height="360" rx="28" fill="#f7f5ee"/>
+<path d="M90 280h115v-50h105v-55h105v-60h105" fill="none" stroke="#155e75" stroke-width="34" stroke-linejoin="round"/>
+<path d="M520 115V55" stroke="#0f3f4f" stroke-width="9"/>
+<path d="M520 55h62l-31 30h-31z" fill="#f59e0b"/>
+<circle cx="145" cy="245" r="14" fill="#fff"/>
+<circle cx="250" cy="195" r="14" fill="#fff"/>
+<circle cx="355" cy="140" r="14" fill="#fff"/>
+<circle cx="460" cy="80" r="14" fill="#fff"/>
+</svg>

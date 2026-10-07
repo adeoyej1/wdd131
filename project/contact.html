@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use the StartSmart planning form to identify your business interest, experience level, and next step.">
+    <meta name="author" content="John Adeoye">
+    <title>Starter Plan | StartSmart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="StartSmart home">Start<span>Smart</span></a>
+        <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="ideas.html">Business Ideas</a>
+            <a href="resources.html">Resources</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">STARTER PLAN</p>
+            <h1>Tell us where you want to start.</h1>
+            <p>This form helps organize your current business interest. It does not provide financial or legal advice.</p>
+        </section>
+
+        <section class="section">
+            <div class="form-layout">
+                <div class="form-intro">
+                    <p class="eyebrow">YOUR NEXT STEP</p>
+                    <h2>Build a clearer starting point.</h2>
+                    <p>Complete the form with realistic information. Your name and selected business interest are saved in your browser for a more convenient next visit.</p>
+                    <div class="mini-card">
+                        <strong>Good planning starts with honest answers.</strong>
+                        <p>You do not need to know everything before beginning. Identify what you know, what you need to learn, and what you can test.</p>
+                    </div>
+                </div>
+
+                <form id="starter-form" class="starter-form" method="get" action="contact.html">
+                    <div class="form-group">
+                        <label for="name">Full name <span aria-hidden="true">*</span></label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address <span aria-hidden="true">*</span></label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Business area of interest <span aria-hidden="true">*</span></legend>
+                        <label><input type="radio" name="interest" value="services" required> Services</label>
+                        <label><input type="radio" name="interest" value="food"> Food & Agriculture</label>
+                        <label><input type="radio" name="interest" value="retail"> Retail</label>
+                        <label><input type="radio" name="interest" value="digital"> Digital</label>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="experience">Current experience level</label>
+                        <select id="experience" name="experience">
+                            <option value="beginner">I am just exploring</option>
+                            <option value="learning">I am learning and researching</option>
+                            <option value="testing">I am testing an offer</option>
+                            <option value="operating">I already operate a business</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">What problem or opportunity are you thinking about? <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="6" minlength="20" required></textarea>
+                        <small>Write at least 20 characters.</small>
+                    </div>
+
+                    <label class="consent"><input type="checkbox" name="consent" required> I understand this is an educational planning tool, not professional financial or legal advice.</label>
+
+                    <button class="button primary-button form-button" type="submit">Create My Starter Plan</button>
+                    <p id="form-status" class="status-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <a class="logo footer-logo" href="index.html">Start<span>Smart</span></a>
+            <p>Practical guidance for aspiring entrepreneurs.</p>
+        </div>
+        <div class="footer-links">
+            <a href="ideas.html">Business Ideas</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="references.html">References</a>
+        </div>
+        <p class="copyright">© <span id="current-year"></span> StartSmart. Built for WDD131.</p>
+    </footer>
+</body>
+</html>

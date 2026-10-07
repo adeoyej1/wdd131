@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn practical startup planning steps, customer research questions, budgeting basics, and launch guidance with StartSmart.">
+    <meta name="author" content="John Adeoye">
+    <title>Startup Resources | StartSmart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="StartSmart home">Start<span>Smart</span></a>
+        <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="ideas.html">Business Ideas</a>
+            <a class="active" href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">STARTUP RESOURCES</p>
+            <h1>Plan the work before you scale the work.</h1>
+            <p>A simple plan helps you test assumptions, control spending, and learn from your first customers.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">A SIMPLE FRAMEWORK</p>
+                <h2>Five steps from idea to first customer</h2>
+            </div>
+            <div class="timeline">
+                <article><span>1</span><div><h3>Define the problem</h3><p>Write one sentence describing the customer problem you want to solve.</p></div></article>
+                <article><span>2</span><div><h3>Talk to customers</h3><p>Ask potential customers about their current solution, frustrations, and buying habits.</p></div></article>
+                <article><span>3</span><div><h3>Build a small offer</h3><p>Create the simplest useful version of your product or service.</p></div></article>
+                <article><span>4</span><div><h3>Track the numbers</h3><p>Record sales, direct costs, operating costs, and customer feedback.</p></div></article>
+                <article><span>5</span><div><h3>Improve deliberately</h3><p>Use evidence from customers and your numbers to decide what to change next.</p></div></article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <img src="images/planning.svg" alt="Checklist and growth chart representing business planning" width="640" height="360" loading="lazy">
+                    <h3>Plan before scaling</h3>
+                    <p>Use a simple checklist to make your assumptions visible before increasing your spending.</p>
+                </article>
+                <article class="feature-card">
+                    <img src="images/success.svg" alt="Steps and a flag representing steady business progress" width="640" height="360" loading="lazy">
+                    <h3>Measure progress</h3>
+                    <p>Small, measurable improvements can help you make better decisions over time.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="resource-columns">
+                <div>
+                    <p class="eyebrow">QUICK TOOL</p>
+                    <h2>Startup readiness check</h2>
+                    <p>Answer the questions below. Your result is saved locally in this browser so you can return to it later.</p>
+                </div>
+                <div class="readiness-card">
+                    <label><input class="readiness-check" type="checkbox"> I can describe my target customer.</label>
+                    <label><input class="readiness-check" type="checkbox"> I understand the problem I am solving.</label>
+                    <label><input class="readiness-check" type="checkbox"> I have estimated my starting costs.</label>
+                    <label><input class="readiness-check" type="checkbox"> I know how I will reach my first customers.</label>
+                    <label><input class="readiness-check" type="checkbox"> I have a simple way to measure results.</label>
+                    <div class="progress-wrap">
+                        <div id="readiness-progress" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                    </div>
+                    <p id="readiness-message" class="status-message" aria-live="polite">Complete the checklist to see your readiness level.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="callout">
+                <h2>Remember: planning is not a guarantee.</h2>
+                <p>A good plan reduces avoidable mistakes, but customers and markets can change. Treat your first version as a learning process.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <a class="logo footer-logo" href="index.html">Start<span>Smart</span></a>
+            <p>Practical guidance for aspiring entrepreneurs.</p>
+        </div>
+        <div class="footer-links">
+            <a href="ideas.html">Business Ideas</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="references.html">References</a>
+        </div>
+        <p class="copyright">© <span id="current-year"></span> StartSmart. Built for WDD131.</p>
+    </footer>
+</body>
+</html>

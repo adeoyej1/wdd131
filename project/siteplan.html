@@ -1,239 +1,103 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site plan for Startup Business Ideas, a website that provides practical business ideas and startup guidance for aspiring entrepreneurs.">
+    <meta name="description" content="StartSmart helps aspiring Nigerian entrepreneurs explore practical business ideas, plan wisely, and take their first steps toward sustainable business growth.">
     <meta name="author" content="John Adeoye">
-    <title>Startup Business Ideas - Site Plan</title>
-
-```
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="siteplan.css">
-```
-
+    <title>StartSmart | Practical Business Ideas for Startups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="logo" aria-label="Startup Business Ideas logo">SBI</div>
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="StartSmart home">Start<span>Smart</span></a>
+        <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="ideas.html">Business Ideas</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-```
-    <div>
-        <h1>Startup Business Ideas</h1>
-        <p>Website Planning Document</p>
-    </div>
-</header>
-
-<main>
-    <section>
-        <h2>1. Site Name</h2>
-
-        <h3>Startup Business Ideas</h3>
-
-        <p>
-            The site name is <strong>Startup Business Ideas</strong>. I chose this
-            name because it clearly communicates the main purpose of the website.
-            The website will help aspiring entrepreneurs discover practical
-            business opportunities and learn how to begin a small business.
-        </p>
-
-        <p>
-            <strong>Proposed domain:</strong>
-            startupbusinessideas.com
-        </p>
-    </section>
-
-    <section>
-        <h2>2. Site Purpose</h2>
-
-        <p>
-            The purpose of this website is to provide aspiring entrepreneurs with
-            practical information about different startup business opportunities.
-            The website will provide business ideas, estimated startup costs,
-            required resources, target customers, marketing strategies, and
-            basic steps for starting and growing a business.
-        </p>
-
-        <p>
-            The information will be presented in a simple and easy-to-understand
-            format to help visitors compare business opportunities and choose
-            an idea that matches their interests, skills, and available resources.
-        </p>
-    </section>
-
-    <section>
-        <h2>3. Scenarios</h2>
-
-        <p>
-            The following questions represent the needs of the website's target
-            audience:
-        </p>
-
-        <ul>
-            <li>What business can I start with a small amount of money?</li>
-            <li>How much money do I need to start a particular business?</li>
-            <li>What business idea is suitable for my skills and experience?</li>
-            <li>Who are the potential customers for my business?</li>
-            <li>How can I market my new business and attract customers?</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>4. Color Scheme</h2>
-
-        <p>
-            The website will use a professional color scheme that represents
-            growth, trust, opportunity, and success.
-        </p>
-
-        <div class="color-grid">
-            <div class="color-item">
-                <div class="green-sample"></div>
-                <h3>Dark Green - #0B5D3B</h3>
-                <p>
-                    Dark green will be used for the header, main headings,
-                    navigation elements, and important sections. It represents
-                    growth, stability, and business development.
-                </p>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">BUILD WITH PURPOSE</p>
+                <h1>Turn a good idea into a <span>smart start.</span></h1>
+                <p class="hero-text">StartSmart gives aspiring entrepreneurs practical ideas, planning guidance, and simple tools to move from thinking about business to taking the next responsible step.</p>
+                <div class="button-row">
+                    <a class="button primary-button" href="ideas.html">Explore Ideas</a>
+                    <a class="button secondary-button" href="resources.html">Learn to Plan</a>
+                </div>
             </div>
-
-            <div class="color-item">
-                <div class="gold-sample"></div>
-                <h3>Gold - #F4B400</h3>
-                <p>
-                    Gold will be used for accents, buttons, borders, highlights,
-                    and calls to action. It represents opportunity, achievement,
-                    and success.
-                </p>
+            <div class="hero-art">
+                <img src="images/hero-business.svg" alt="Illustration of a person planning a business on a laptop" width="640" height="520">
             </div>
+        </section>
 
-            <div class="color-item">
-                <div class="light-sample"></div>
-                <h3>Light Gray - #F5F7F5</h3>
-                <p>
-                    Light gray will be used as the main page background to create
-                    a clean and comfortable reading environment.
-                </p>
+        <section class="section section-light">
+            <div class="section-heading">
+                <p class="eyebrow">START SMALL. THINK LONG TERM.</p>
+                <h2>What makes a business idea worth exploring?</h2>
+                <p>A strong opportunity solves a real problem, fits your available resources, and gives you room to learn and improve.</p>
             </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">◎</div>
+                    <h3>Real Need</h3>
+                    <p>Look for problems people already spend money, time, or effort trying to solve.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">↗</div>
+                    <h3>Clear Value</h3>
+                    <p>Know exactly what your customer receives and why your offer is useful.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">▣</div>
+                    <h3>Simple Start</h3>
+                    <p>Begin with a manageable version, measure results, and improve before expanding.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="eyebrow">POPULAR STARTING POINTS</p>
+                    <h2>Explore practical opportunities</h2>
+                </div>
+                <a class="text-link" href="ideas.html">See all ideas →</a>
+            </div>
+            <div id="featured-ideas" class="idea-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="cta-section">
+            <div>
+                <p class="eyebrow">YOUR NEXT STEP</p>
+                <h2>Do not wait for a perfect idea. Start by understanding a real problem.</h2>
+                <p>Use the resources and planning checklist to turn an opportunity into a realistic first action.</p>
+            </div>
+            <a class="button light-button" href="contact.html">Create My Starter Plan</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <a class="logo footer-logo" href="index.html">Start<span>Smart</span></a>
+            <p>Practical guidance for aspiring entrepreneurs.</p>
         </div>
-    </section>
-
-    <section>
-        <h2>5. Typography</h2>
-
-        <h3 class="montserrat-example">Montserrat</h3>
-
-        <p>
-            Montserrat will be used for the site name, headings, navigation,
-            section titles, and other important headings. It provides a modern,
-            professional, and strong appearance.
-        </p>
-
-        <h3 class="roboto-example">Roboto</h3>
-
-        <p>
-            Roboto will be used for paragraphs, descriptions, lists, and general
-            body content. It is clean and easy to read on both mobile and desktop
-            screens.
-        </p>
-    </section>
-
-    <section>
-        <h2>6. Target Audience</h2>
-
-        <p>
-            The primary target audience is aspiring entrepreneurs, students,
-            young professionals, unemployed individuals, and people interested
-            in starting a small business or developing an additional source of
-            income.
-        </p>
-    </section>
-
-    <section>
-        <h2>7. Planned Website Content</h2>
-
-        <h3>Business Ideas</h3>
-        <p>
-            A collection of practical startup ideas from different business
-            categories.
-        </p>
-
-        <h3>Startup Costs</h3>
-        <p>
-            Estimated costs and basic resources required to start each business.
-        </p>
-
-        <h3>Target Customers</h3>
-        <p>
-            Information about the types of customers each business can serve.
-        </p>
-
-        <h3>Marketing Strategies</h3>
-        <p>
-            Simple marketing methods that can help new businesses attract and
-            retain customers.
-        </p>
-
-        <h3>Getting Started</h3>
-        <p>
-            Basic steps that aspiring entrepreneurs can follow to turn an idea
-            into an operating business.
-        </p>
-    </section>
-
-    <section>
-        <h2>8. Wireframes</h2>
-
-        <h3>Mobile View</h3>
-
-        <div class="wireframe mobile-wireframe">
-            <div class="wire-header">LOGO / SITE NAME</div>
-            <div class="wire-nav">MENU</div>
-            <div class="wire-hero">HERO / INTRODUCTION</div>
-            <div class="wire-section">FEATURED BUSINESS IDEAS</div>
-            <div class="wire-card">BUSINESS IDEA 1</div>
-            <div class="wire-card">BUSINESS IDEA 2</div>
-            <div class="wire-card">BUSINESS IDEA 3</div>
-            <div class="wire-section">STARTUP TIPS</div>
-            <div class="wire-footer">FOOTER</div>
+        <div class="footer-links">
+            <a href="ideas.html">Business Ideas</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="references.html">References</a>
         </div>
-
-        <h3>Desktop View</h3>
-
-        <div class="wireframe desktop-wireframe">
-            <div class="wire-header">LOGO / SITE NAME</div>
-
-            <div class="wire-nav">
-                HOME | BUSINESS IDEAS | STARTUP COSTS | STARTUP TIPS
-            </div>
-
-            <div class="wire-hero">HERO / INTRODUCTION</div>
-
-            <div class="wire-row">
-                <div class="wire-card">BUSINESS IDEA 1</div>
-                <div class="wire-card">BUSINESS IDEA 2</div>
-                <div class="wire-card">BUSINESS IDEA 3</div>
-            </div>
-
-            <div class="wire-section">
-                STARTUP REQUIREMENTS | COSTS | MARKETING
-            </div>
-
-            <div class="wire-footer">FOOTER</div>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>WDD 131 - Dynamic Web Fundamentals | Startup Business Ideas</p>
-    <p>Site Plan by John Adeoye</p>
-</footer>
-```
-
+        <p class="copyright">© <span id="current-year"></span> StartSmart. Adeoye John.</p>
+    </footer>
 </body>
 </html>
